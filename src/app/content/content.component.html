@@ -1,0 +1,41 @@
+<h2 class="text-center mt-3">user details</h2>
+<hr>
+
+
+    <table class="container table text-center">
+        <thead>
+            <tr>
+                <th>userid</th>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>maidenName</th>
+                <th>age</th>
+                <th>gender</th>
+                <th>blood group</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>birthday</th>
+                <th>image</th>
+    
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of user">
+                <td>{{item.id}}</td>
+                <td>{{item.firstName}}</td>
+                <td>{{item.lastName}}</td>
+                <td>{{item.maidenName}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.gender}}</td>
+                <td>{{item.bloodGroup}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.birthDate}}</td>
+                <td><img style="width: 40%;" [src]="item.image" alt=""></td>
+                
+    
+            </tr>
+        </tbody>
+    </table>
+    
+<!-- </mat-paginator> -->
